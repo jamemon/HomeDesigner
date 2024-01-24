@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<engine:UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:engine="UnityEngine.UIElements"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
+>
+  <editor:PropertyField binding-path="_id" class="box" />
+  <editor:ReorderableList binding-path="_predicate" />
+  <engine:Label text="Error Message" class="box" />
+  <engine:Box class="box">
+    <editor:PropertyField binding-path="_title" />
+    <editor:PropertyField binding-path="_comment" />
+  </engine:Box>
+  <editor:ReorderableList binding-path="_url" />
+</engine:UXML>

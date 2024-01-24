@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<engine:UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:engine="UnityEngine.UIElements"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
+>
+  <editor:PropertyField binding-path="_id" class="box" />
+  <editor:PropertyField binding-path="_name" class="box" />
+  <editor:PropertyField binding-path="_comment" class="box" />
+  <engine:Box class="box">
+    <editor:PropertyField binding-path="_isUnityServices" />
+    <editor:PropertyField binding-path="_isSetSymbol" />
+    <editor:PropertyField binding-path="_commentOnClicked" />
+    <editor:PropertyField binding-path="_isShowOnlyDevelopmentMode" />
+  </engine:Box>
+  <editor:ReorderableList binding-path="_url" />
+  <editor:ReorderableList binding-path="_dependencyList" />
+</engine:UXML>

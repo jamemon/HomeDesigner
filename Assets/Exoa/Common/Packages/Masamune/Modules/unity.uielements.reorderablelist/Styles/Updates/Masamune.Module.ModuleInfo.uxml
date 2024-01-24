@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<engine:UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:engine="UnityEngine.UIElements"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
+>
+  <editor:BindableLabel text="Module Information" binding-path="_name" class="box" />
+  <editor:BindableLabel text="Module Description" binding-path="_description" class="box" />
+  <editor:PropertyField binding-path="_enable" class="box" />
+  <editor:PropertyField binding-path="_packageName" class="box" />
+  <engine:Foldout text="Information" value="false">
+    <engine:Box class="box">
+      <editor:PropertyField binding-path="_name" />
+      <editor:PropertyField binding-path="_description" />
+      <editor:PropertyField binding-path="_author" />
+      <editor:PropertyField binding-path="_officialURL" />
+      <editor:PropertyField binding-path="_email" />
+    </engine:Box>
+    <editor:PropertyField binding-path="_rootDirectoryPath" class="box" />    
+  </engine:Foldout>
+  <engine:Foldout text="Version" value="false">
+    <engine:Box class="box">
+      <editor:PropertyField binding-path="_version" />
+      <editor:PropertyField binding-path="_versionCode" />
+    </engine:Box>
+    <engine:Box class="box">
+      <editor:PropertyField binding-path="_minSDKVersion" />
+      <editor:PropertyField binding-path="_targetSDKVersion" />
+    </engine:Box>
+  </engine:Foldout>
+  <engine:Foldout text="Module Order" value="false">
+    <editor:PropertyField binding-path="_moduleOrder" class="box" />
+  </engine:Foldout>
+  <engine:Foldout text="Assembly Setting" value="false">
+    <editor:PropertyField binding-path="_assemblyInformation" />
+    <editor:ReorderableList binding-path="_additionalAssemblyInformation" />
+    <editor:ReorderableList binding-path="_commandOnLoad" />
+    <editor:ReorderableList binding-path="_commandOnAfterLoad" />
+  </engine:Foldout>
+</engine:UXML>
